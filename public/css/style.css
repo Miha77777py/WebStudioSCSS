@@ -121,3 +121,26 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 200px 0;
+}
+
+.features {
+    padding: 94px 0;
+}
+
+.our-work {
+    padding-bottom: 94px;
+}
+
+.team {
+    padding: 94px 0;
+}
