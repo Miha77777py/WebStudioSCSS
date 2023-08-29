@@ -83,3 +83,19 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.filters {
+    padding-top: 86px;
+    padding-bottom: 34px;
+}
+
+.projects {
+    padding-bottom: 102px;
+}
