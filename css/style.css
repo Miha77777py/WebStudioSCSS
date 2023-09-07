@@ -44,14 +44,18 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
+    display: block;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
     letter-spacing: 0.06em;
     text-align: center;
+    margin: 0 auto;
 }
 
 .features-list-title {
@@ -74,6 +78,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team-title {
@@ -82,6 +87,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team-list-title {
@@ -90,6 +96,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .team-list-desc {
@@ -101,12 +108,19 @@ body {
 }
 
 .footer-logo {
+    display: block;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-bottom: 20px;
+    width: 145px;
+}
+
+.adress-list-item {
+    margin-top: 9px;
 }
 
 .adress-list-desc {
@@ -168,13 +182,6 @@ body {
     margin-left: auto;
 }
 
-.hero-content-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
 .feauters-list {
     display: flex;
     gap: 30px;
@@ -186,21 +193,9 @@ body {
     gap: 10px;
 }
 
-.our-work-content-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
 .our-work-list {
     display: flex;
     gap: 30px;
-}
-
-.team-content-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 
 .team-list {
@@ -209,20 +204,5 @@ body {
 }
 
 .team-list-text {
-    display: flex;
-    flex-direction: column;
     padding: 30px 0;
-    gap: 10px;
-}
-
-.footer-content-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.adress-list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
 }

@@ -23,6 +23,24 @@ body {
     text-align: left;
 }
 
+.header-content-wrap {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 93px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
 .nav-list-link {
     font-weight: 500;
     line-height: 1.1;
@@ -37,12 +55,25 @@ body {
     text-align: left;
 }
 
+.filters-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
 .filters-list-btn {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.03em;
     text-align: center;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .projects-list-title {
@@ -62,12 +93,15 @@ body {
 }
 
 .footer-logo {
+    display: block;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-bottom: 20px;
+    width: 145px;
 }
 
 .adress-list-desc {
@@ -77,11 +111,8 @@ body {
     text-align: left;
 }
 
-.adress-list-desc {
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-align: left;
+.adress-list-item {
+    margin-top: 9px;
 }
 
 .container {
@@ -91,11 +122,19 @@ body {
     margin: 0 auto;
 }
 
-.filters {
+.portfolio {
     padding-top: 86px;
-    padding-bottom: 34px;
+    padding-bottom: 102px;
 }
 
-.projects {
-    padding-bottom: 102px;
+.footer {
+    padding: 60px 0;
+}
+
+.team-list-text {
+    padding: 30px 24px;
+}
+
+.projects-list-item {
+    margin-bottom: 4px;
 }
