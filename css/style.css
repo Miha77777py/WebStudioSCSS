@@ -63,6 +63,7 @@ body {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .features-list-desc {
@@ -96,7 +97,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .team-list-desc {
@@ -185,12 +186,6 @@ body {
 .feauters-list {
     display: flex;
     gap: 30px;
-}
-
-.features-list-item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .our-work-list {
