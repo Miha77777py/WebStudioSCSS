@@ -75,7 +75,7 @@ body {
 }
 
 .features-list-item:first-child::before {
-    background-image: url("../images/Group\ 1.png");
+    background-image: url("../images/radar.jpg");
     display: block;
     content: "";
     width: 270px;
@@ -83,7 +83,7 @@ body {
 }
 
 .features-list-item:nth-child(2)::before {
-    background-image: url("../images/Group\ 2.png");
+    background-image: url("../images/clock.jpg");
     display: block;
     content: "";
     width: 270px;
@@ -91,7 +91,7 @@ body {
 }
 
 .features-list-item:nth-child(3)::before {
-    background-image: url("../images/Group\ 3.png");
+    background-image: url("../images/graph.jpg");
     display: block;
     content: "";
     width: 270px;
@@ -99,7 +99,7 @@ body {
 }
 
 .features-list-item:last-child::before {
-    background-image: url("../images/Group\ 4.png");
+    background-image: url("../images/astronaut.jpg");
     display: block;
     content: "";
     width: 270px;
