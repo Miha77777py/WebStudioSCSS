@@ -6,6 +6,7 @@
     --dark-blue-color: rgba(47, 48, 58, 1);
     --darker-white-color: rgba(245, 244, 250, 1);
     --alpha-gray-color: rgba(255, 255, 255, 0.60);
+    --overlay: rgba(47, 48, 58, 0.40);
 }
 
 body {
@@ -227,7 +228,7 @@ body {
     margin-left: auto;
 }
 
-.feauters-list {
+.features-list {
     display: flex;
     gap: 30px;
 }
