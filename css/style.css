@@ -1,11 +1,14 @@
 :root {
     --white-color: rgba(255, 255, 255, 1); 
+    --line-white-color: rgba(236, 236, 236, 1);
+    --team-white-color: rgba(245, 244, 250, 1);
     --blue-color: rgba(33, 150, 243, 1);
     --black-color: rgba(33, 33, 33, 1);
     --gray-color: rgba(117, 117, 117, 1);
     --dark-blue-color: rgba(47, 48, 58, 1);
     --darker-white-color: rgba(245, 244, 250, 1);
     --alpha-gray-color: rgba(255, 255, 255, 0.60);
+    --alpha-dark-color: rgba(0, 0, 0, 0.15);
     --overlay: rgba(47, 48, 58, 0.40);
 }
 
@@ -29,6 +32,11 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--black-color)
+}
+
+.nav-list-link:hover {
+    color: var(--blue-color);
 }
 
 .contacts-list-link {
@@ -36,6 +44,11 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--gray-color);
+}
+
+.contacts-list-link:hover {
+    color: var(--blue-color);
 }
 
 .hero-title {
@@ -63,7 +76,7 @@ body {
     border-radius: 4px;
     color: var(--white-color);
     background-color: var(--blue-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px var(--alpha-dark-color);
 }
 
 .features-list-title {
@@ -166,6 +179,7 @@ body {
 }
 
 .adress-list-desc {
+    color: var(--white-color);
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -178,6 +192,7 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .container {
@@ -187,11 +202,15 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    border-bottom: 1px solid var(--line-white-color);
+}
+
 .hero {
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
                     url(../images/background-hero.jpg);
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--dark-blue-color);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -206,10 +225,12 @@ body {
 
 .team {
     padding: 94px 0;
+    background-color: var(--team-white-color);
 }
 
 .footer {
     padding: 60px 0;
+    background-color: var(--dark-blue-color);
 }
 
 .header-content-wrap {
@@ -252,4 +273,20 @@ body {
 
 .team-list-text {
     padding: 30px 0;
+}
+
+.header-logo-web {
+    color: var(--blue-color);
+}
+
+.header-logo-studio {
+    color: var(--black-color);
+}
+
+.footer-logo-web {
+    color: var(--blue-color);
+}
+
+.footer-logo-studio {
+    color: var(--white-color);
 }

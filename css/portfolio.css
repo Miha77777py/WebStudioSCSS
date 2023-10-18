@@ -1,5 +1,6 @@
 :root {
     --white-color: rgba(255, 255, 255, 1); 
+    --line-white-color: rgba(236, 236, 236, 1);
     --blue-color: rgba(33, 150, 243, 1);
     --black-color: rgba(33, 33, 33, 1);
     --gray-color: rgba(117, 117, 117, 1);
@@ -46,6 +47,11 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--black-color)
+}
+
+.nav-list-link:hover {
+    color: var(--blue-color);
 }
 
 .contacts-list-link {
@@ -53,6 +59,11 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--gray-color);
+}
+
+.contacts-list-link:hover {
+    color: var(--blue-color);
 }
 
 .filters-list {
@@ -124,10 +135,20 @@ body {
 }
 
 .adress-list-desc {
+    color: var(--white-color);
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
+}
+
+.adress-list-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .adress-list-item {
@@ -141,6 +162,10 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    border-bottom: 1px solid var(--line-white-color);
+}
+
 .portfolio {
     padding-top: 86px;
     padding-bottom: 102px;
@@ -148,8 +173,25 @@ body {
 
 .footer {
     padding: 60px 0;
+    background-color: var(--dark-blue-color);
 }
 
 .team-list-text {
     padding: 30px 24px;
+}
+
+.header-logo-web {
+    color: var(--blue-color);
+}
+
+.header-logo-studio {
+    color: var(--black-color);
+}
+
+.footer-logo-web {
+    color: var(--blue-color);
+}
+
+.footer-logo-studio {
+    color: var(--white-color);
 }
