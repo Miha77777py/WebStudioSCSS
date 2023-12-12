@@ -40,11 +40,19 @@ body {
 }
 
 .contacts-list-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
     color: var(--gray-color);
+    transition: 0.2s;
+}
+
+.contacts-list-icon {
+    fill: currentColor;
 }
 
 .contacts-list-link:hover {
@@ -160,6 +168,33 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: rgba(175, 177, 184, 1);
+    transition: 0.2s;
+}
+
+.social-list-link:hover {
+    background-color: rgba(33, 150, 243, 1);
+    color: white;
+}
+
+.social-list-icon {
+    fill: currentColor;
 }
 
 .footer-logo {
