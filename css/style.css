@@ -382,6 +382,29 @@ body {
     gap: 30px;
 }
 
+.our-work-list-item {
+    position: relative;
+}
+
+.our-work-list-text {
+    display: flex;
+    color: #FFF;
+    background: rgba(47, 48, 58, 0.80);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .team-list {
     display: flex;
     gap: 30px;
