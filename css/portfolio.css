@@ -15,6 +15,25 @@ body {
     color: var(--black-color);
 }
 
+
+.header-content-wrap {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 93px;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
 .header-logo {
     font-family: "Raleway";
     font-size: 26px;
@@ -24,25 +43,8 @@ body {
     text-align: left;
 }
 
-.header-content-wrap {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    gap: 93px;
-}
-
-.nav-list {
-    display: flex;
-    gap: 50px;
-}
-
-.contacts-list {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
-}
-
 .nav-list-link {
+    position: relative;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -50,16 +52,35 @@ body {
     color: var(--black-color)
 }
 
-.nav-list-link:hover {
+.active {
     color: var(--blue-color);
 }
 
+.active::after {
+    position: absolute;
+    top: 46px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+}
+
 .contacts-list-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
     color: var(--gray-color);
+    transition: 0.2s;
+}
+
+.contacts-list-icon {
+    fill: currentColor;
 }
 
 .contacts-list-link:hover {
@@ -83,6 +104,7 @@ body {
     line-height: 1.6;
     letter-spacing: 0.03em;
     text-align: center;
+    transition: 0.2s;
 }
 
 .filters-list-btn:hover {
@@ -98,12 +120,19 @@ body {
 }
 
 .projects-list-item {
+    position: relative;
     flex-basis: calc((100% - 60px) / 3);
     outline: 1px solid #EEE;
+    transition: 0.5s;
+    overflow: hidden;
 }
 
-.projects-list-item:first-child {
+.projects-list-item:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.projects-list-item:hover .overlay {
+    transform: translateY(0);
 }
 
 .projects-list-title {
@@ -122,6 +151,24 @@ body {
     text-align: left;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-101%);
+    color: var(--white-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    background-color: rgba(33, 150, 243, 0.90);
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+    transition: transform 0.5s ease
+}
+
 .footer-logo {
     display: block;
     font-family: "Raleway";
@@ -132,6 +179,10 @@ body {
     text-align: left;
     margin-bottom: 20px;
     width: 145px;
+}
+
+.adress-list-item {
+    margin-top: 9px;
 }
 
 .adress-list-desc {
@@ -151,8 +202,101 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-list-item {
-    margin-top: 9px;
+.footer-wrap {
+    display: flex;
+    gap: 70px;
+}
+
+.media-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.media-list {
+    display: flex;
+    gap: 10px;
+}
+
+.media-list-link {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.media-list-link:hover {
+    background-color: rgba(33, 150, 243, 1);
+}
+
+.media-list-icon {
+    fill: #FFF;
+}
+
+.footer-mailing-text {
+    color: var(--white-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-form-input {
+    width: 358px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+.footer-form-input:focus-within {
+    outline: 1px solid rgba(33, 150, 243, 1);
+}
+
+.footer-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
 }
 
 .container {
