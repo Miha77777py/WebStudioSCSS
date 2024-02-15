@@ -33,7 +33,12 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
-    color: var(--black-color)
+    color: var(--black-color);
+    transition: color 0.2s ease;
+}
+
+.nav-list-link:hover {
+    color: var(--blue-color);
 }
 
 .active {

@@ -1,0 +1,45 @@
+.features {
+    padding: 94px 0;
+
+    &-list {
+        display: flex;
+        gap: 30px;
+    
+
+        &-title {
+            padding-top: 30px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        
+        &-desc {
+            font-weight: 400;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            text-align: left;
+        }
+        
+        &-item:first-child::before {
+            background-image: url("../../../images/radar.jpg");
+            @extend %features-before;
+        }
+        
+        &-item:nth-child(2)::before {
+            background-image: url("../../../images/clock.jpg");
+            @extend %features-before;
+        }
+        
+        &-item:nth-child(3)::before {
+            background-image: url("../../../images/graph.jpg");
+            @extend %features-before;
+        }
+        
+        &-item:last-child::before {
+            background-image: url("../../../images/astronaut.jpg");
+            @extend %features-before;
+        }
+    }
+}

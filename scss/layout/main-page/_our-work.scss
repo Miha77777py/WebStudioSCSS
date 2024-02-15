@@ -1,0 +1,39 @@
+.our-work {
+    padding-bottom: 94px;
+
+    &-list {
+        display: flex;
+        gap: 30px;
+
+        &-item {
+            position: relative;
+        }
+
+        &-text {
+            display: flex;
+            color: #FFF;
+            background: rgba(47, 48, 58, 0.80);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 370px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    &-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
