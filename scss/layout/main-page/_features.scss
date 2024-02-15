@@ -23,22 +23,22 @@
         }
         
         &-item:first-child::before {
-            background-image: url("../../../images/radar.jpg");
+            background-image: url("../images/radar.jpg");
             @extend %features-before;
         }
         
         &-item:nth-child(2)::before {
-            background-image: url("../../../images/clock.jpg");
+            background-image: url("../images/clock.jpg");
             @extend %features-before;
         }
         
         &-item:nth-child(3)::before {
-            background-image: url("../../../images/graph.jpg");
+            background-image: url("../images/graph.jpg");
             @extend %features-before;
         }
         
         &-item:last-child::before {
-            background-image: url("../../../images/astronaut.jpg");
+            background-image: url("../images/astronaut.jpg");
             @extend %features-before;
         }
     }
