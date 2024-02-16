@@ -1,0 +1,144 @@
+.footer {
+    padding: 60px 0;
+    background-color: $dark-blue-color;
+
+    &-wrap {
+        display: flex;
+        gap: 70px;
+    }
+
+    &-logo {
+        display: block;
+        font-family: "Raleway";
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: left;
+        margin-bottom: 20px;
+        width: 145px;
+        color: $white-color;
+
+        &-web {
+            color: $blue-color;
+        }
+    }
+
+    &-mailing {
+        &-text {
+            color: $white-color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            padding-top: 12px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-form {
+        display: flex;
+        gap: 12px;
+
+        &-input {
+            width: 358px;
+            background-color: transparent;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            padding: 15px 16px;
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.48px;
+
+            &:focus-within {
+                outline: 1px solid rgba(33, 150, 243, 1);
+            }
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 200px;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #2196F3;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            color: $white-color;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.96px;
+        }
+    }
+}
+
+.adress-list {
+    &-item {
+        margin-top: 9px;
+    }
+    
+    &-desc {
+        color: $white-color;
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    
+    &-link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.media-text {
+    color: $white-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.media-list {
+    display: flex;
+    gap: 10px;
+
+    &-link {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.10);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+    
+        &:hover {
+            background-color: rgba(33, 150, 243, 1);
+        }
+    }
+    
+    &-icon {
+        fill: $white-color;
+    }
+}
+

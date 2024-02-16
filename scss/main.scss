@@ -2,9 +2,12 @@
 @import "./base/reset";
 @import "./abstracts/placeholders";
 @import "./base/base";
-@import "./components/button";
 @import "./components/container";
+@import "./components/modal";
 @import "./layout/header";
+@import "./layout/footer";
 @import "./layout/main-page/hero";
 @import "./layout/main-page/features";
 @import "./layout/main-page/our-work";
+@import "./layout/main-page/team";
+@import "./layout/main-page/clients";
