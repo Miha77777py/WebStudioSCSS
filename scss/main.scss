@@ -1,6 +1,7 @@
-@import "./abstracts/variables";
 @import "./base/reset";
+@import "./abstracts/variables";
 @import "./abstracts/placeholders";
+@import "./abstracts/mixins";
 @import "./base/base";
 @import "./components/container";
 @import "./components/modal";
@@ -11,4 +12,4 @@
 @import "./layout/main-page/our-work";
 @import "./layout/main-page/team";
 @import "./layout/main-page/clients";
-@import "./layout/portfolio-page/hero";
+@import "./layout/portfolio-page/portfolio";

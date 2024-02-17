@@ -1,11 +1,11 @@
-.backdrop{
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -23,6 +23,7 @@
     border-radius: 4px;
     padding: 40px;
     background-color: white;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
     &-textarea {
         resize: none;
@@ -129,6 +130,10 @@
             fill: currentColor;
         }
     }
+}
+
+.on-animate {
+    transform: translate(-50%, -200%);
 }
 
 .input-name, .input-tel, .input-email{
