@@ -31,6 +31,23 @@ label {
   margin-bottom: 10px;
 }
 
+@-webkit-keyframes lineActive {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes lineActive {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .features-list-item:last-child::before, .features-list-item:nth-child(3)::before, .features-list-item:nth-child(2)::before, .features-list-item:first-child::before {
   display: block;
   content: "";
@@ -325,6 +342,8 @@ body {
   top: 46px;
   display: block;
   content: "";
+  -webkit-animation: lineActive 0.5s ease;
+          animation: lineActive 0.5s ease;
   width: 100%;
   height: 4px;
   border-radius: 2px;
