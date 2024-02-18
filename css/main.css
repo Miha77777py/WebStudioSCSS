@@ -588,16 +588,16 @@ body {
   text-align: left;
 }
 .features-list-item:first-child::before {
-  background-image: url("../images/radar.jpg");
+  background-image: url("../images/radar.png");
 }
 .features-list-item:nth-child(2)::before {
-  background-image: url("../images/clock.jpg");
+  background-image: url("../images/clock.png");
 }
 .features-list-item:nth-child(3)::before {
-  background-image: url("../images/graph.jpg");
+  background-image: url("../images/graph.png");
 }
 .features-list-item:last-child::before {
-  background-image: url("../images/astronaut.jpg");
+  background-image: url("../images/astronaut.png");
 }
 
 .our-work {
