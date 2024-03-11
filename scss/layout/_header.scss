@@ -1,7 +1,7 @@
 .header {
     border-bottom: 1px solid $line-white-color;
 
-    &-logo {
+    &__logo {
         color: inherit;
         font-family: "Raleway";
         font-size: 26px;
@@ -11,25 +11,26 @@
         text-align: left;
     }
 
-    &-logo-web {
-        color: $blue-color;
-    }
-
-    &-content-wrap {
+   
+    &__wrapper {
         display: flex;
         align-items: center;
         height: 80px;
         gap: 93px;
     }
+
+    &__btn {
+        margin-left: auto;
+    }
 }
 
 .nav {
-    &-list {
+    &__list {
         display: flex;
         gap: 50px;
     }
 
-    &-list-link {
+    &__link {
         position: relative;
         font-weight: 500;
         line-height: 1.1;
@@ -37,10 +38,10 @@
         text-align: left;
         color: $black-color;
         transition: color 0.2s ease;
-    }
 
-    &-list-link:hover {
-        color: $blue-color;
+        &:hover {
+            color: $blue-color;
+        }
     }
 }
 
@@ -60,12 +61,12 @@
     }
 }
 
-.contacts-list {
+.contacts {
     display: flex;
     gap: 50px;
     margin-left: auto;
 
-    &-link {
+    &__link {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -75,13 +76,40 @@
         text-align: left;
         color: $gray-color;
         transition: 0.2s;
+
+        &:hover {
+            color: $blue-color;
+        }
     }
     
-    &-icon {
+    &__icon {
         fill: currentColor;
     }
-    
-    &-link:hover {
-        color: $blue-color;
+}
+
+@media screen and (max-width: 767px) {
+    .contacts, .nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contacts__link {
+        font-size: 12px;
+    }
+
+    .header__wrapper {
+        gap: 87px;
     }
 }

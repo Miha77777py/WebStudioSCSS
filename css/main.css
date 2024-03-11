@@ -61,8 +61,22 @@ body {
   color: rgb(33, 33, 33);
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -288,10 +302,14 @@ body {
   height: 15px;
 }
 
+.web {
+  color: rgb(33, 150, 243);
+}
+
 .header {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
-.header-logo {
+.header__logo {
   color: inherit;
   font-family: "Raleway";
   font-size: 26px;
@@ -300,10 +318,7 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
 }
-.header-logo-web {
-  color: rgb(33, 150, 243);
-}
-.header-content-wrap {
+.header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,14 +328,17 @@ body {
   height: 80px;
   gap: 93px;
 }
+.header__btn {
+  margin-left: auto;
+}
 
-.nav-list {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
-.nav-list-link {
+.nav__link {
   position: relative;
   font-weight: 500;
   line-height: 1.1;
@@ -330,7 +348,7 @@ body {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-.nav-list-link:hover {
+.nav__link:hover {
   color: rgb(33, 150, 243);
 }
 
@@ -350,14 +368,14 @@ body {
   background-color: #2196F3;
 }
 
-.contacts-list {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
-.contacts-list-link {
+.contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,13 +391,38 @@ body {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.contacts-list-icon {
-  fill: currentColor;
-}
-.contacts-list-link:hover {
+.contacts__link:hover {
   color: rgb(33, 150, 243);
 }
+.contacts__icon {
+  fill: currentColor;
+}
 
+@media screen and (max-width: 767px) {
+  .contacts, .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .contacts__link {
+    font-size: 12px;
+  }
+  .header__wrapper {
+    gap: 87px;
+  }
+}
 .footer {
   padding: 60px 0;
   background-color: rgb(47, 48, 58);
@@ -564,6 +607,29 @@ body {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding: 118px 0;
+  }
+  .hero-title {
+    font-size: 26px;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tablet.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.png");
+    background-size: cover;
+  }
+}
 .features {
   padding: 94px 0;
 }
