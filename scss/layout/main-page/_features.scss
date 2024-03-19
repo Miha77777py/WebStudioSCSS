@@ -28,14 +28,15 @@
         font-weight: 400;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        text-align: left;
-        width: 450px;
+        text-align: center;
+        max-width: 450px;
         @include tab(768px) {
-            width: 354px;
+            max-width: 354px;
+            text-align: left;
         }
 
         @include desc(1200px) {
-            width: 270px;
+            max-width: 270px;
         }
     }
 
