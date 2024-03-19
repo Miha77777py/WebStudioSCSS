@@ -1,5 +1,9 @@
 .our-work {
     padding-bottom: 94px;
+    display: none;
+    @include desc(1200px) {
+        display: block;
+    }
 
     &-list {
         display: flex;

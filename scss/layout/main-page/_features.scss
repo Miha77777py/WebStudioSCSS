@@ -1,45 +1,59 @@
 .features {
     padding: 94px 0;
 
-    &-list {
+    &__list {
         display: flex;
+        flex-direction: column;
         gap: 30px;
-    
+        @include tab(768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 
-        &-title {
-            padding-top: 30px;
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: 0.03em;
-            text-align: left;
-            margin-bottom: 10px;
+    &__title {
+        padding-top: 30px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-align: left;
+        margin-bottom: 10px;
+        text-align: center;
+        @include tab(768px) {
+            text-align: start;
         }
-        
-        &-desc {
-            font-weight: 400;
-            line-height: 1.7;
-            letter-spacing: 0.03em;
-            text-align: left;
+    }
+    
+    &__desc {
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-align: left;
+        width: 450px;
+        @include tab(768px) {
+            width: 354px;
         }
-        
-        &-item:first-child::before {
-            background-image: url("../images/radar.png");
-            @extend %features-before;
+
+        @include desc(1200px) {
+            width: 270px;
         }
-        
-        &-item:nth-child(2)::before {
-            background-image: url("../images/clock.png");
-            @extend %features-before;
+    }
+
+    &__item {
+        @include tab(768px) {
+            flex-basis: calc((100% - 30px) / 2);
         }
-        
-        &-item:nth-child(3)::before {
-            background-image: url("../images/graph.png");
-            @extend %features-before;
+
+        @include desc(1200px) {
+            flex-basis: calc((100% - 90px) / 4);
         }
-        
-        &-item:last-child::before {
-            background-image: url("../images/astronaut.png");
-            @extend %features-before;
-        }
+    }
+
+    &__top {
+        display: flex;
+        height: 120px;
+        background-color: rgba(245, 244, 250, 1);
+        justify-content: center;
+        align-items: center;
     }
 }

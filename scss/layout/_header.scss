@@ -16,15 +16,31 @@
         display: flex;
         align-items: center;
         height: 80px;
-        gap: 93px;
+        @include tab(768px) {
+            gap: 87px;
+        }
+
+        @include tab(1200px) {
+            gap: 93px;
+        }
     }
 
     &__btn {
+        display: block;
         margin-left: auto;
+
+        @include tab(768px) {
+            display: none;
+        }
     }
 }
 
 .nav {
+    display: none;
+    @include tab(768px) {
+        display: block;
+    }
+
     &__list {
         display: flex;
         gap: 50px;
@@ -62,10 +78,19 @@
 }
 
 .contacts {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
+    display: none;
+    @include tab(768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+    }
 
+    @include desc(1200px) {
+        flex-direction: row;
+        gap: 50px;
+    }
+    
     &__link {
         display: flex;
         align-items: center;
@@ -76,6 +101,13 @@
         text-align: left;
         color: $gray-color;
         transition: 0.2s;
+        @include tab(768px) {
+            font-size: 12px;
+        }
+
+        @include desc(1200px) {
+            font-size: 14px;
+        }
 
         &:hover {
             color: $blue-color;
@@ -84,32 +116,5 @@
     
     &__icon {
         fill: currentColor;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .contacts, .nav {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .header__btn {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .contacts {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contacts__link {
-        font-size: 12px;
-    }
-
-    .header__wrapper {
-        gap: 87px;
     }
 }

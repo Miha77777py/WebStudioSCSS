@@ -1,24 +1,31 @@
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
                     url("../images/background-hero.jpg");
     background-color: $dark-blue-color;
     background-repeat: no-repeat;
     background-position: center;
+    @include desc(1200px) {
+        padding: 200px 0;
+    }
 
-    &-title {
+    &__title {
         color: $white-color;
-        font-size: 44px;
         font-weight: 900;
         line-height: 1.4;
         letter-spacing: 0.06em;
         text-align: center;
-        width: 696px;
+        font-size: 26px;
+        width: 360px;
         margin: 0 auto;
         margin-bottom: 30px;
+        @include desc(1200px) {
+            font-size: 44px;
+            width: 696px;
+        }
     }
 
-    &-btn {
+    &__btn {
         display: block;
         width: 216px;
         height: 50px;
@@ -32,32 +39,5 @@
         color: $white-color;
         background-color: $blue-color;
         box-shadow: 0px 4px 4px 0px $alpha-dark-color;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .hero {
-        padding: 118px 0;
-
-        &-title {
-            font-size: 26px;
-            width: 360px;
-        }
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .hero {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-                    url("../images/hero-mobile.png");
-        background-size: cover;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .hero {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-                    url("../images/hero-tablet.png");
-        background-size: cover;
     }
 }
