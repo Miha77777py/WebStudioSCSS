@@ -2,6 +2,12 @@
     flex-basis: calc((100% - $gapSumm) / $rowElements);
 }
 
+@mixin mob($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
+
 @mixin tab($breakPoint) {
     @media screen and (min-width: $breakPoint) {
         @content;
