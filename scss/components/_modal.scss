@@ -18,12 +18,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 528px;
+    
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     padding: 40px;
     background-color: white;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mob(480px) {
+        width: 450px;
+    }
+
+    @include desc(1200px) {
+        width: 528px;
+    }
 
     &-textarea {
         resize: none;
@@ -159,11 +167,15 @@
 
     &-span {
         color: #757575;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px; /* 171.429% */
         letter-spacing: 0.42px;
+
+        @include desc(1200px) {
+            font-size: 14px;
+        }
     }
 
     &-link {

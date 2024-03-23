@@ -1,43 +1,60 @@
 .clients {
-    padding: 94px 0;
+    padding: 60px 0;
+    @include tab(768px) {
+        padding: 94px 0;
+    }
 
-    &-title {
+    &__title {
         color: #212121;
         text-align: center;
-        font-size: 36px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 1.08px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @include desc(1200px) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.brands {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &__link {
+        display: flex;
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid #AFB1B8;
+        justify-content: center;
+        align-items: center;
+        color: rgba(175, 177, 184, 1);
+        transition: 0.2s;
+
+        &:hover {
+            color: rgba(33, 150, 243, 1);
+            border: 1px solid rgba(33, 150, 243, 1);
+        }
     }
 
-    &-list {
-        display: flex;
-        gap: 30px;
+    &__item {
+        @include gridSystem(30px, 2);
 
-        &-link {
-            display: flex;
-            height: 92px;
-            border-radius: 4px;
-            border: 1px solid #AFB1B8;
-            justify-content: center;
-            align-items: center;
-            color: rgba(175, 177, 184, 1);
-            transition: 0.2s;
-
-            &:hover {
-                color: rgba(33, 150, 243, 1);
-                border: 1px solid rgba(33, 150, 243, 1);
-            }
+        @include tab(768px) {
+            @include gridSystem(60px, 3);
         }
 
-        &-item {
-            flex-basis: calc((100% - 150px) / 6);
+        @include desc(1200px) {
+            @include gridSystem(150px, 6);
         }
+    }
 
-        &-icon {
-            fill: currentColor;
-        }
+    &__icon {
+        fill: currentColor;
     }
 }

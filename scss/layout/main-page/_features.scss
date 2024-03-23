@@ -42,11 +42,11 @@
 
     &__item {
         @include tab(768px) {
-            flex-basis: calc((100% - 30px) / 2);
+            @include gridSystem(30px, 2);
         }
 
         @include desc(1200px) {
-            flex-basis: calc((100% - 90px) / 4);
+            @include gridSystem(90px, 4);
         }
     }
 
