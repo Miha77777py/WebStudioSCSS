@@ -1,5 +1,9 @@
 .features {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @include desc(1200px) {
+        padding: 94px 0;
+    }
 
     &__list {
         display: flex;
@@ -12,7 +16,7 @@
     }
 
     &__title {
-        padding-top: 30px;
+        margin-top: 30px;
         font-weight: 700;
         line-height: 1.1;
         letter-spacing: 0.03em;
