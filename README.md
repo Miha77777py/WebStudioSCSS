@@ -13,6 +13,7 @@
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - [SCSS](https://sass-lang.com/)
+- [JS](https://uk.wikipedia.org/wiki/JavaScript)
 
 
 ### Author
