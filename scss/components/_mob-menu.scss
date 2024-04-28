@@ -1,0 +1,105 @@
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 48px 40px;
+    transform: translateX(0);
+    transition: 0.4s;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    
+    &__close {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        right: 15px;
+        background-color: transparent;
+    }
+}
+
+.is-hidden-mob {
+    transform: translateX(100%);
+}
+
+.mob-navigation {
+    &__item {
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+    
+    &__link {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 46.88px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: inherit;
+    
+        &:hover {
+            color: $blue-color;
+        }
+    }
+}
+
+.mob-contacts {
+    margin-bottom: 64px;
+
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    &__mail {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.13px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: $gray-color;
+    }
+
+    &__tel {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 39.84px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: $blue-color;
+    }
+    
+    &__item:last-child {
+        margin: 0;
+    }
+}
+
+.mob-social {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    &__item:not(:first-child) {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 10px;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: $blue-color;
+    }
+}
