@@ -2,8 +2,6 @@
 
 ### [Site link](https://miha77777py.github.io/WebStudioSCSS/)
 
-![Screen](./images/screen.png)
-
 ### App support:
 
 - *Desktop*
