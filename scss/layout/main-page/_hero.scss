@@ -1,12 +1,40 @@
 .hero {
     padding: 118px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-                    url("../images/background-hero.jpg");
-    background-color: $dark-blue-color;
+    @include bg-image("../images/hero-mob@1x.webp", "../images/hero-mob@1x.jpg", $gradient);
+    @include retina(2, 192dpi, 2dppx) {
+        @include bg-image("../images/hero-mob@2x.webp", "../images/hero-mob@2x.jpg", $gradient);
+    }
+
+    @include retina(3, 288dpi, 3dppx) {
+        @include bg-image("../images/hero-mob@3x.webp", "../images/hero-mob@3x.jpg", $gradient);
+    }
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    @include tab(768px) {
+        @include bg-image("../images/hero-tab@1x.webp", "../images/hero-tab@1x.jpg", $gradient);
+        
+        @include retina(2, 192dpi, 2dppx) {
+            @include bg-image("../images/hero-tab@2x.webp", "../images/hero-tab@2x.jpg", $gradient);
+        }
+
+        @include retina(3, 288dpi, 3dppx) {
+            @include bg-image("../images/hero-tab@3x.webp", "../images/hero-tab@3x.jpg", $gradient);
+        }
+    }
+
     @include desc(1200px) {
         padding: 200px 0;
+        @include bg-image("../images/hero-desc@1x.webp", "../images/hero-desc@1x.jpg", $gradient);
+        
+        @include retina(2, 192dpi, 2dppx) {
+            @include bg-image("../images/hero-desc@2x.webp", "../images/hero-desc@2x.jpg", $gradient);
+        }
+
+        @include retina(3, 288dpi, 3dppx) {
+            @include bg-image("../images/hero-desc@3x.webp", "../images/hero-desc@3x.jpg", $gradient);
+        }
     }
 
     &__title {
